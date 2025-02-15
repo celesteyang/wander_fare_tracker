@@ -1,4 +1,3 @@
-// services/kafka/producer.go
 package main
 
 import (
@@ -9,10 +8,10 @@ import (
 )
 
 func main() {
-	ProduceMessage()
+	Producer()
 }
 
-func ProduceMessage() {
+func Producer() {
 	producer, err := sarama.NewSyncProducer([]string{"localhost:9092"}, nil)
 	if err != nil {
 		log.Fatal(err)
