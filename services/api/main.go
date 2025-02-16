@@ -5,6 +5,7 @@ import (
 )
 
 func main() {
+	kafka.Producer()
 	kafka.StartConsumer()
 
 }
