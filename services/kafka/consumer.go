@@ -1,5 +1,5 @@
 // services/kafka/consumer.go
-package main
+package kafka
 
 import (
 	"fmt"
@@ -8,7 +8,7 @@ import (
 	"github.com/IBM/sarama"
 )
 
-func main() {
+func StartConsumer() {
 	ConsumeMessages()
 }
 
